@@ -31,7 +31,7 @@ python manage.py runserver
 
 Documentation of our API endpoints starts here
 
-## Get the list of Pizzas
+## Get the list of pizzas
 
 ### Request
 
