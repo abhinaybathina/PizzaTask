@@ -35,6 +35,8 @@ Documentation of our API endpoints starts here
 
 ### Request
 
+`GET /api/list-pizza`
+
     GET /api/list-pizza HTTP/1.1
     Host: 127.0.0.1
 
@@ -56,6 +58,8 @@ Documentation of our API endpoints starts here
 
 ### Request
 
+`GET /api/list-pizza?type=pizzaType&size=pizzaSize`
+
     GET /api/list-pizza?type=Regular&size=Small HTTP/1.1
     Host: 127.0.0.1
 
@@ -71,6 +75,8 @@ Documentation of our API endpoints starts here
 ## Create a new pizza
 
 ### Request
+
+`POST /api/create-pizza`
 
     POST /api/create-pizza HTTP/1.1
     Host: 127.0.0.1
@@ -92,6 +98,8 @@ Documentation of our API endpoints starts here
 
 ### Request
 
+`PUT /api/edit-pizza/:id`
+
     PUT /api/edit-pizza/6 HTTP/1.1
     Host: 127.0.0.1
     Content-Type: application/json
@@ -111,6 +119,8 @@ Documentation of our API endpoints starts here
 ## Delete a pizza
 
 ### Request
+
+`DELETE /api/edit-pizza/:id`
 
     DELETE /api/edit-pizza/6 HTTP/1.1
     Host: 127.0.0.1
