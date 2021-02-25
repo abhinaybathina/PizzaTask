@@ -35,88 +35,88 @@ Documentation of our API endpoints starts here
 
 ### Request
 
-`GET /api/list-pizza HTTP/1.1
-Host: 127.0.0.1`
+    GET /api/list-pizza HTTP/1.1
+    Host: 127.0.0.1
 
 ### Response
 
-`[{
-    "id": 1,
-    "pizza_type": "Regular",
-    "pizza_size": "Small",
-    "toppings": "Onions"
-}, {
-    "id": 2,
-    "pizza_type": "Square",
-    "pizza_size": "Medium",
-    "toppings": "Cheese"
-}]`
+    [{
+        "id": 1,
+        "pizza_type": "Regular",
+        "pizza_size": "Small",
+        "toppings": "Onions"
+    }, {
+        "id": 2,
+        "pizza_type": "Square",
+        "pizza_size": "Medium",
+        "toppings": "Cheese"
+    }]
 
 ## Get the list of pizzas filtered based on size and type of pizza
 
 ### Request
 
-`GET /api/list-pizza?type=Regular&size=Small HTTP/1.1
-Host: 127.0.0.1`
+    GET /api/list-pizza?type=Regular&size=Small HTTP/1.1
+    Host: 127.0.0.1
 
 ### Response
 
-`[{
-    "id": 1,
-    "pizza_type": "Regular",
-    "pizza_size": "Small",
-    "toppings": "Onions"
-}]`
+    [{
+        "id": 1,
+        "pizza_type": "Regular",
+        "pizza_size": "Small",
+        "toppings": "Onions"
+    }]
 
 ## Create a new pizza
 
 ### Request
 
-`POST /api/create-pizza HTTP/1.1
-Host: 127.0.0.1
-Content-Type: application/json
-Content-Length: 67
+    POST /api/create-pizza HTTP/1.1
+    Host: 127.0.0.1
+    Content-Type: application/json
+    Content-Length: 67
 
-{"pizza_type":"Square","pizza_size":"Large", "toppings":"Capsicum"}`
+    {"pizza_type":"Square","pizza_size":"Large", "toppings":"Capsicum"}
 
 ### Response
 
-`{
-    "id": 6,
-    "pizza_type": "Square",
-    "pizza_size": "Large",
-    "toppings": "Capsicum"
-}`
+    {
+        "id": 6,
+        "pizza_type": "Square",
+        "pizza_size": "Large",
+        "toppings": "Capsicum"
+    }
 
 ## Edit a pizza
 
 ### Request
 
-`PUT /api/edit-pizza/6 HTTP/1.1
-Host: 127.0.0.1
-Content-Type: application/json
-Content-Length: 65
+    PUT /api/edit-pizza/6 HTTP/1.1
+    Host: 127.0.0.1
+    Content-Type: application/json
+    Content-Length: 65
 
-{"pizza_type":"Square","pizza_size":"Large", "toppings":"Cheese"}`
+    {"pizza_type":"Square","pizza_size":"Large", "toppings":"Cheese"}
 
 ### Response
 
-`{
-    "id": 6,
-    "pizza_type": "Square",
-    "pizza_size": "Large",
-    "toppings": "Cheese"
-}`
+    {
+        "id": 6,
+        "pizza_type": "Square",
+        "pizza_size": "Large",
+        "toppings": "Cheese"
+    }
 
 ## Delete a pizza
 
 ### Request
 
-`DELETE /api/edit-pizza/6 HTTP/1.1
-Host: 127.0.0.1`
+    DELETE /api/edit-pizza/6 HTTP/1.1
+    Host: 127.0.0.1
 
 ### Response
 
-`{
-    "message": "Pizza deleted successfully"
-}`
+    {
+        "message": "Pizza deleted successfully"
+    }
